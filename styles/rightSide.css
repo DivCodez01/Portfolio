@@ -1,12 +1,12 @@
 .container .rightSide-container {
     display: grid;
     grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
 }
 
 .container .rightSide-container #qualification-container {
     display: grid;
     justify-content: center;
-    /* align-items: center; */
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;
 }
@@ -37,15 +37,16 @@
     align-self: baseline;
     justify-self: center;
     text-decoration: none;
-    background: blue;
+    background: rgb(0, 0, 199);
     color: white;
     text-transform: uppercase;
     padding: .4em;
     border-radius: .5em;
     font-weight: bold;
     letter-spacing: .05em;
-    opacity: .6;
+    opacity: .7;
     position: relative;
+    font-style: italic;
 }
 
 .container .rightSide-container #qualification-container span {
@@ -58,13 +59,17 @@
     font-size: .75em;
     font-weight: 100;
     opacity: 0;
+    background-color: rgb(235, 235, 235);
+    display: none;
 }
 
 .container .rightSide-container #qualification-container span.download {
     opacity: 1;
+    display: block;
 }
 
 .container .rightSide-container #qualification-container a:hover {
+    background: blue;
     opacity: 1;
 }
 
@@ -79,9 +84,11 @@
     align-items: end;
     grid-template-columns: 2em 2em 2em;
     background: black;
-    border-top: 2px solid white;
     margin-bottom: 2em;
     column-gap: 1em;
+    border-top-width: 2px;
+    border-top-style: dashed;
+    border-top-color: white;
 }
 
 .rightSide-container .vist-container a {

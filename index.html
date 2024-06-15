@@ -32,11 +32,11 @@
         <div class="rightSide-container">
             <div id='fullDetails-wrapper'>
                 <ul>
-                    <li data-move="&nbsp;home" style="--clr: green;">&nbsp;home</li>
-                    <li data-move="&nbsp;about" style="--clr: green;">&nbsp;about</li>
-                    <li data-move="&nbsp;dashboard" style="--clr: green;">&nbsp;dashboard</li>
-                    <li data-move="&nbsp;projects" style="--clr: green;">&nbsp;projects</li>
-                    <li data-move="&nbsp;contact" style="--clr: green;">&nbsp;contact</li>
+                    <li data-move="&nbsp;home" style="--clr: aqua;">&nbsp;home</li>
+                    <li data-move="&nbsp;about" style="--clr: rgb(0, 207, 69);">&nbsp;about</li>
+                    <li data-move="&nbsp;dashboard" style="--clr: rgb(208, 255, 0);">&nbsp;dashboard</li>
+                    <li data-move="&nbsp;projects" style="--clr: rgb(255, 136, 0);">&nbsp;projects</li>
+                    <li data-move="&nbsp;contact" style="--clr: rgb(231, 231, 231);">&nbsp;contact</li>
                 </ul>
             </div>
 
@@ -44,7 +44,7 @@
                 <h1>Divin Gay NDIZIHIWE Gakiza</h1>
                 <h2>I'm a frontend developer</h2>
                 <a href="#">download
-                    <span id="hover-me" class="download">download CV</span>
+                    <span id="hover-me">download CV</span>
                 </a>
             </div>
 
@@ -79,7 +79,6 @@
         console.log(downloadCV)
 
         downloadCV.addEventListener('mouseover', function (ev) {
-            console.log("hud")
 
             hoverSenser.classList.add('download');
             hoverSenser.style.left = `${ev.offsetX - 20}px`
@@ -88,7 +87,8 @@
 
         downloadCV.addEventListener('mouseleave', function (ev) {
             hoverSenser.classList.remove('download');
-            console.log('leave')
+            hoverSenser.style.left = `${ev.offsetX - 100}px`
+            hoverSenser.style.top = `${ev.offsetY + 100}px`
         })
     </script>
 </body>
