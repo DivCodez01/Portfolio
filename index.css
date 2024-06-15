@@ -65,3 +65,23 @@ main {
     border-radius: 50%;
     box-shadow: 0 0 10px 3px rgb(110, 110, 110) inset;
 }
+
+
+
+
+
+#image-container img {
+    width: 93%;
+    height: 93%;
+    border-radius: 50%;
+    object-fit: cover;
+    border-width: .2em;
+    border-style: solid;
+    border-color: black;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    height: 100vh;
+}
