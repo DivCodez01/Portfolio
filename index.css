@@ -85,3 +85,26 @@ main {
     grid-template-columns: 1fr 2fr;
     height: 100vh;
 }
+
+.rightSide-container {
+    /* background: green; */
+    /* position: relative; */
+}
+
+.rightSide-container #fullDetails-wrapper {
+    /* height: 100vh; */
+}
+
+.rightSide-container #fullDetails-wrapper li {
+    list-style: none;
+}
+
+.rightSide-container #fullDetails-wrapper ul li {}
+
+.bck-image-wrapper {
+    background: black;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+}
