@@ -31,3 +31,37 @@ main {
     color: transparent;
     -webkit-text-stroke: 1px white;
 }
+
+#divCodez-details {
+    color: rgb(110, 110, 110);
+    position: relative;
+    display: flex;
+    justify-self: baseline;
+    align-self: baseline;
+    top: 0;
+}
+
+#image-container {
+    position: absolute;
+    width: 180px;
+    height: 200px;
+    border-radius: 50%;
+    display: flex;
+    place-content: center;
+    place-items: center;
+    right: -90px;
+}
+
+#image-container::before {
+    display: flex;
+    content: '';
+    position: absolute;
+    border-width: .3em 0 .3em 0;
+    border-style: solid;
+    border-color: rgba(32, 32, 32, 0.9);
+    animation: rotate 8s linear infinite;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    box-shadow: 0 0 10px 3px rgb(110, 110, 110) inset;
+}
