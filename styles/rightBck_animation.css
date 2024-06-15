@@ -49,3 +49,32 @@
     border-radius: 50%;
     animation: rotate 3.5s linear infinite;
 }
+
+
+
+
+
+.earth {
+    width: 6em;
+    height: 6em;
+    border-width: .2em .2em 0 0;
+    border-style: solid;
+    border-color: rgb(163, 163, 163) transparent transparent transparent;
+    border-radius: 50%;
+    position: relative;
+    top: -.5em;
+    right: -13.5em;
+    animation: rotate 4s linear infinite;
+}
+
+.earth::before {
+    content: "";
+    position: absolute;
+    width: .8em;
+    height: .8em;
+    background-color: rgb(163, 163, 163);
+    box-shadow: 0 0 .8em rgb(163, 163, 163);
+    right: .3em;
+    top: .5em;
+    border-radius: 50%;
+}
