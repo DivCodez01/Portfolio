@@ -1,0 +1,35 @@
+.container #leftSide-container #image-container {
+    position: absolute;
+    width: 280px;
+    height: 310px;
+    border-radius: 50%;
+    display: flex;
+    place-content: center;
+    place-items: center;
+    right: -140px;
+}
+
+.container #leftSide-container #image-container::before {
+    display: flex;
+    content: '';
+    position: absolute;
+    border-width: .3em 0 .3em 0;
+    border-style: solid;
+    border-color: rgba(32, 32, 32, 0.9);
+    animation: rotate 8s linear infinite;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    box-shadow: 0 0 10px 3px rgb(110, 110, 110) inset;
+}
+
+.container #leftSide-container #image-container img {
+    width: 93%;
+    height: 93%;
+    border-radius: 50%;
+    object-fit: cover;
+    border-width: .2em;
+    border-style: solid;
+    border-color: black;
+    -webkit-filter: none;
+}
