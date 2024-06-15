@@ -1,0 +1,17 @@
+.container .rightSide-container {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.container .rightSide-container #qualification-container {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .rightSide-container .vist-container {
+    display: grid;
+    justify-content: center;
+    /* align-items: center; */
+    color: red;
+}

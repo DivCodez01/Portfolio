@@ -20,57 +20,11 @@ body {
 .rightSide-container {
     /* background: green; */
     /* position: relative; */
-    /* display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%; */
-    background: black;
-}
-
-.rightSide-container #fullDetails-wrapper {
-    /* height: 100vh; */
-}
-
-.rightSide-container #fullDetails-wrapper ul {
-    list-style: none;
     display: flex;
     justify-content: center;
-    margin-top: 2em;
-}
-
-.rightSide-container #fullDetails-wrapper ul li {
-    color: transparent;
-    margin-left: 1.1em;
-    font-size: .8em;
-    font-weight: bold;
-    text-transform: uppercase;
-    -webkit-text-stroke: .2px white;
-    z-index: 1;
-    padding: 0 .07em;
-    /* border: 2px solid green; */
-    position: relative;
-    cursor: pointer;
-    letter-spacing: .07em;
-}
-
-.rightSide-container #fullDetails-wrapper ul li::before {
-    border-right: .13em solid white;
-    content: attr(data-move);
-    position: absolute;
-    padding-right: .1.8em;
-    /* background: var(--clr); */
-    /* border: var(--clr); */
-    width: 0;
-    -webkit-text-stroke: 1px white;
-    transition: .9s;
-    color: var(--clr);
-    -webkit-text-stroke: .2px var(--clr);
-    overflow: hidden;
-}
-
-.rightSide-container #fullDetails-wrapper ul li:hover::before {
+    align-items: center;
     width: 100%;
-    color: var(--clr);
+    /* background: black; */
 }
 
 @keyframes rotate {
