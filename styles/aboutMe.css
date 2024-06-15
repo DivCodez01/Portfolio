@@ -4,6 +4,7 @@
     justify-content: center;
     /* position: absolute; */
     background-color: yellow;
+    /* align-items: center; */
 }
 
 .container .rightSide-container #fullDetails-wrapper ul {

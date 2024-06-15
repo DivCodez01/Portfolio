@@ -6,9 +6,34 @@
 .container .rightSide-container #qualification-container {
     display: grid;
     justify-content: center;
+    align-items: center;
+    grid-template-columns: 1fr;
+    /* row-gap: 1em; */
 }
 
-.container .rightSide-container .vist-container {
+.container .rightSide-container #qualification-container h1 {
+    display: grid;
+    align-self: flex-end;
+    justify-self: center;
+}
+
+.container .rightSide-container #qualification-container h2 {
+    display: grid;
+    align-self: baseline;
+    justify-self: center;
+}
+
+.container .rightSide-container #qualification-container a {
+    display: grid;
+    align-self: baseline;
+    justify-self: center;
+    text-decoration: none;
+    background: blue;
+    color: white;
+    text-transform: uppercase;
+}
+
+.rightSide-container .vist-container {
     display: grid;
     justify-content: center;
     color: red;
