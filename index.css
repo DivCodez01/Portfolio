@@ -116,16 +116,41 @@ main {
 .rightSide-container #fullDetails-wrapper ul {
     list-style: none;
     display: flex;
-    justify-content: end;
-    margin: 1em;
+    justify-content: center;
+    margin-top: 2em;
 }
 
 .rightSide-container #fullDetails-wrapper ul li {
-    color: white;
-    border-left: 2px solid white;
-    margin-left: 10px;
-    padding-left: .2em;
-    font-size: 1.2em;
+    color: transparent;
+    margin-left: 1.6em;
+    font-size: .7em;
+    font-weight: bold;
+    text-transform: uppercase;
+    -webkit-text-stroke: .5px white;
+    z-index: 1;
+    width: 80px;
+    /* border: 2px solid green; */
+    position: relative;
+}
+
+.rightSide-container #fullDetails-wrapper ul li::before {
+    border-right: .13em solid white;
+    content: attr(data-move);
+    position: absolute;
+    padding-right: .1em;
+    /* background: var(--clr); */
+    /* border: var(--clr); */
+    width: 0;
+    -webkit-text-stroke: .5px white;
+    transition: .6s;
+    color: var(--clr);
+    -webkit-text-stroke: .5px var(--clr);
+    overflow: hidden;
+}
+
+.rightSide-container #fullDetails-wrapper ul li:hover::before {
+    width: 100%;
+    color: var(--clr);
 }
 
 
