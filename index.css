@@ -8,20 +8,29 @@ body {
     width: 100%;
     height: 100vh;
     font-family: "DivCodez", Arial, Helvetica, sans-serif;
+    /* overflow: hidden; */
 }
 
 #leftSide-container {
-    background: rgb(0, 0, 0, .9);
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
+    box-shadow: -0px 0 20px 10px rgb(14, 12, 12);
+}
+
+#leftSide-container img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    filter: sepia(90%) brightness(40%);
 }
 
 main {
     align-self: baseline;
     text-align: center;
     margin-top: 1em;
+    z-index: 1;
 }
 
 #my-name {
@@ -30,26 +39,29 @@ main {
     margin-bottom: .6em;
     color: transparent;
     -webkit-text-stroke: 1px white;
+    letter-spacing: 3px;
 }
 
 #divCodez-details {
-    color: rgb(110, 110, 110);
+    color: rgb(255, 255, 255);
     position: relative;
     display: flex;
     justify-self: baseline;
     align-self: baseline;
+    /* word-spacing: 2px; */
+    line-height: 2em;
     top: 0;
 }
 
 #image-container {
     position: absolute;
-    width: 180px;
-    height: 200px;
+    width: 280px;
+    height: 310px;
     border-radius: 50%;
     display: flex;
     place-content: center;
     place-items: center;
-    right: -90px;
+    right: -140px;
 }
 
 #image-container::before {
@@ -70,7 +82,7 @@ main {
 
 
 
-#image-container img {
+#leftSide-container #image-container img {
     width: 93%;
     height: 93%;
     border-radius: 50%;
@@ -78,6 +90,7 @@ main {
     border-width: .2em;
     border-style: solid;
     border-color: black;
+    -webkit-filter: none;
 }
 
 .container {
@@ -89,6 +102,10 @@ main {
 .rightSide-container {
     /* background: green; */
     /* position: relative; */
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; */
 }
 
 .rightSide-container #fullDetails-wrapper {
@@ -99,12 +116,6 @@ main {
     list-style: none;
 }
 
-.rightSide-container #fullDetails-wrapper ul li {}
-
-.bck-image-wrapper {
-    background: black;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    z-index: -1;
+.rightSide-container #fullDetails-wrapper ul li {
+    color: white;
 }
