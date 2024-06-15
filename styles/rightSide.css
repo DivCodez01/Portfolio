@@ -19,6 +19,7 @@
     -webkit-text-stroke: .5px white;
     letter-spacing: 1px;
     font-size: 1.8em;
+    pointer-events: none;
 }
 
 .container .rightSide-container #qualification-container h2 {
@@ -28,6 +29,7 @@
     color: rgb(70, 70, 70);
     letter-spacing: .9px;
     font-size: 1.4em;
+    pointer-events: none;
 }
 
 .container .rightSide-container #qualification-container a {
@@ -46,22 +48,19 @@
     position: relative;
 }
 
-.container .rightSide-container #qualification-container a::before {
-    content: 'download CV';
+.container .rightSide-container #qualification-container span {
     position: absolute;
-    bottom: -2.3em;
-    background: white;
+    background: rgb(112, 112, 112);
     color: black;
     text-wrap: nowrap;
     padding: .1em .2em;
     border-radius: .4em;
-    right: -2em;
     font-size: .75em;
     font-weight: 100;
     opacity: 0;
 }
 
-.container .rightSide-container #qualification-container a.download::before {
+.container .rightSide-container #qualification-container span.download {
     opacity: 1;
 }
 

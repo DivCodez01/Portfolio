@@ -43,7 +43,9 @@
             <div id="qualification-container">
                 <h1>Divin Gay NDIZIHIWE Gakiza</h1>
                 <h2>I'm a frontend developer</h2>
-                <a href="#" class="download">download</a>
+                <a href="#">download
+                    <span id="hover-me" class="download">download CV</span>
+                </a>
             </div>
 
             <div class="vist-container">
@@ -73,16 +75,20 @@
 
     <script>
         const downloadCV = document.querySelector('#qualification-container a')
+        const hoverSenser = document.querySelector('#qualification-container #hover-me')
         console.log(downloadCV)
 
         downloadCV.addEventListener('mouseover', function (ev) {
             console.log("hud")
 
-            downloadCV.classList.add('download')
+            hoverSenser.classList.add('download');
+            hoverSenser.style.left = `${ev.offsetX - 20}px`
+            hoverSenser.style.top = `${ev.offsetY + 20}px`
         })
 
         downloadCV.addEventListener('mouseleave', function (ev) {
-            this.classList.remove('download');
+            hoverSenser.classList.remove('download');
+            console.log('leave')
         })
     </script>
 </body>
