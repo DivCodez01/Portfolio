@@ -22,12 +22,6 @@
     position: relative;
 }
 
-
-
-
-
-
-
 .sun {
     width: 7em;
     height: 7em;
@@ -50,9 +44,17 @@
     animation: rotate 3.5s linear infinite;
 }
 
-
-
-
+.moon::before {
+    content: "";
+    position: absolute;
+    width: 1.7em;
+    height: 1.7em;
+    border-radius: 50%;
+    background-color: rgb(13, 170, 170);
+    box-shadow: 0 0 10px 3px rgb(13, 170, 170);
+    right: 1.8em;
+    top: 1.8em;
+}
 
 .earth {
     width: 6em;
@@ -77,4 +79,10 @@
     right: .3em;
     top: .5em;
     border-radius: 50%;
+}
+
+@keyframes rotate {
+    to {
+        transform: rotate(360deg);
+    }
 }
