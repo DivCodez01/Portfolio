@@ -31,6 +31,20 @@
     background: blue;
     color: white;
     text-transform: uppercase;
+    padding: .4em;
+    border-radius: .5em;
+    font-weight: bold;
+    letter-spacing: .05em;
+    opacity: .7;
+}
+
+.container .rightSide-container #qualification-container a:hover {
+    opacity: 1;
+}
+
+.container .rightSide-container #qualification-container a:active {
+    opacity: .4;
+    transform: translate(.6px, -1px);
 }
 
 .rightSide-container .vist-container {
