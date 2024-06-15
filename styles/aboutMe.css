@@ -1,7 +1,9 @@
 .container .rightSide-container #fullDetails-wrapper {
     /* height: 100vh; */
-    display: flex;
+    display: grid;
     justify-content: center;
+    /* position: absolute; */
+    background-color: yellow;
 }
 
 .container .rightSide-container #fullDetails-wrapper ul {
