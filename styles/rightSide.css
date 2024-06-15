@@ -43,6 +43,26 @@
     font-weight: bold;
     letter-spacing: .05em;
     opacity: .6;
+    position: relative;
+}
+
+.container .rightSide-container #qualification-container a::before {
+    content: 'download CV';
+    position: absolute;
+    bottom: -2.3em;
+    background: white;
+    color: black;
+    text-wrap: nowrap;
+    padding: .1em .2em;
+    border-radius: .4em;
+    right: -2em;
+    font-size: .75em;
+    font-weight: 100;
+    opacity: 0;
+}
+
+.container .rightSide-container #qualification-container a.download::before {
+    opacity: 1;
 }
 
 .container .rightSide-container #qualification-container a:hover {
