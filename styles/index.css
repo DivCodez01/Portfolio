@@ -1,5 +1,5 @@
 * {
-    /* padding: 0; */
+    padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
@@ -21,7 +21,7 @@ body {
     /* background: green; */
     /* position: relative; */
     display: grid;
-    background: black;
+    /* background: black; */
 }
 
 @keyframes rotate {
@@ -29,135 +29,3 @@ body {
         transform: rotate(360deg);
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* .animation-wrapper {
-    width: 100%;
-    height: 100vh;
-    background: linear-gradient(90deg, white, black, black, black);
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    place-content: center;
-    place-items: center;
-    position: absolute;
-    top: 0;
-    z-index: -1;
-    right: 0;
-}
-
-.bck-image-wrapper {
-    width: 20em;
-    height: 20em;
-    border-radius: 50%;
-    background-color: transparent;
-    display: flex;
-    justify-content: center;
-    position: relative;
-}
-
-.sun {
-    width: 6em;
-    height: 6em;
-    border-radius: 50%;
-    background-color: yellow;
-    box-shadow: 0 0 35px 5px white;
-    align-self: center;
-    justify-self: center;
-    z-index: 1;
-}
-
-.moon {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    border-width: 2px 2px 0 0;
-    border-style: solid;
-    border-color: white transparent transparent transparent;
-    border-radius: 50%;
-    animation: rotate 36.5s linear infinite;
-}
-
-.earth {
-    width: 7em;
-    height: 7em;
-    border-width: .2em .2em 0 0;
-    border-style: solid;
-    border-color: white transparent transparent transparent;
-    border-radius: 50%;
-    position: relative;
-    top: -1em;
-    right: -14em;
-    animation: rotate 4s linear infinite;
-}
-
-.earth::before {
-    content: "";
-    position: absolute;
-    width: 1em;
-    height: 1em;
-    background-color: white;
-    box-shadow: 0 0 .8em white;
-    right: .5em;
-    top: .5em;
-    border-radius: 50%;
-}
-
-.moon::before {
-    content: "";
-    position: absolute;
-    width: 2em;
-    height: 2em;
-    border-radius: 50%;
-    background-color: aqua;
-    box-shadow: 0 0 10px 3px aqua;
-    right: 1.8em;
-    top: 1.8em;
-}
-
-@keyframes rotate {
-    to {
-        transform: rotate(360deg);
-    }
-} */

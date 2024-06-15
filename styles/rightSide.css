@@ -2,6 +2,7 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;
+    position: relative;
 }
 
 .container .rightSide-container #qualification-container {
@@ -15,10 +16,10 @@
     display: grid;
     align-self: flex-end;
     justify-self: center;
-    color: rgb(56, 56, 56);
-    -webkit-text-stroke: .5px white;
+    /* color: rgb(56, 56, 56); */
+    -webkit-text-stroke: .5px rgb(68, 139, 139);
     letter-spacing: 1px;
-    font-size: 1.8em;
+    font-size: 1.9em;
     pointer-events: none;
 }
 
@@ -26,10 +27,11 @@
     display: grid;
     align-items: center;
     justify-self: center;
-    color: rgb(70, 70, 70);
+    color: rgb(56, 56, 56);
     letter-spacing: .9px;
-    font-size: 1.4em;
+    font-size: 1.6em;
     pointer-events: none;
+    text-shadow: 1px 1px 1px white;
 }
 
 .container .rightSide-container #qualification-container a {
@@ -37,10 +39,10 @@
     align-self: baseline;
     justify-self: center;
     text-decoration: none;
-    background: rgb(0, 0, 199);
+    background: rgb(13, 170, 170);
     color: white;
     text-transform: uppercase;
-    padding: .4em;
+    padding: .9em;
     border-radius: .5em;
     font-weight: bold;
     letter-spacing: .05em;
@@ -56,7 +58,7 @@
     text-wrap: nowrap;
     padding: .1em .2em;
     border-radius: .4em;
-    font-size: .75em;
+    font-size: .95em;
     font-weight: 100;
     opacity: 0;
     background-color: rgb(235, 235, 235);
@@ -69,7 +71,7 @@
 }
 
 .container .rightSide-container #qualification-container a:hover {
-    background: blue;
+    background: rgb(13, 170, 170);
     opacity: 1;
 }
 
@@ -83,12 +85,21 @@
     justify-content: center;
     align-items: end;
     grid-template-columns: 2em 2em 2em;
-    background: black;
     margin-bottom: 2em;
     column-gap: 1em;
-    border-top-width: 2px;
+}
+
+.rightSide-container .vist-container::before {
+    content: '';
+    position: absolute;
+    width: 40%;
+    height: 100px;
+    background: transparent;
+    border-top-width: 3px;
     border-top-style: dashed;
-    border-top-color: white;
+    border-top-color: rgb(17, 58, 26);
+    bottom: 0;
+    right: 30%;
 }
 
 .rightSide-container .vist-container a {

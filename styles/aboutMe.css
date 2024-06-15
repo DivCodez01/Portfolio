@@ -2,21 +2,18 @@
     /* height: 100vh; */
     display: grid;
     justify-content: center;
-    /* position: absolute; */
-    /* align-items: center; */
 }
 
 .container .rightSide-container #fullDetails-wrapper ul {
     list-style: none;
     display: flex;
     justify-content: center;
-    align-items: baseline;
     margin-top: 2em;
 }
 
 .container .rightSide-container #fullDetails-wrapper ul li {
     color: transparent;
-    margin-left: 1.1em;
+    margin: .4em;
     font-size: .8em;
     font-weight: bold;
     text-transform: uppercase;
@@ -26,13 +23,14 @@
     position: relative;
     cursor: pointer;
     letter-spacing: .07em;
+    font-size: .9em;
 }
 
 .container .rightSide-container #fullDetails-wrapper ul li::before {
-    border-right: .13em solid white;
+    border-right: .25em solid var(--clr);
     content: attr(data-move);
     position: absolute;
-    padding-right: .1.8em;
+    padding-right: .1em;
     width: 0;
     transition: .9s;
     color: var(--clr);
