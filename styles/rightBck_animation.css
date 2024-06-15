@@ -1,0 +1,23 @@
+.animation-wrapper {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(90deg, white, black, black, black);
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    place-content: center;
+    place-items: center;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    right: 0;
+}
+
+.bck-image-wrapper {
+    width: 19em;
+    height: 19em;
+    border-radius: 50%;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
