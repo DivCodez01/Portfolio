@@ -6,21 +6,29 @@
 .container .rightSide-container #qualification-container {
     display: grid;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
     grid-template-columns: 1fr;
-    /* row-gap: 1em; */
+    grid-template-rows: 1fr 1fr 1fr;
 }
 
 .container .rightSide-container #qualification-container h1 {
     display: grid;
     align-self: flex-end;
     justify-self: center;
+    color: rgb(56, 56, 56);
+    -webkit-text-stroke: .5px white;
+    letter-spacing: 1px;
+    font-size: 1.6em;
 }
 
 .container .rightSide-container #qualification-container h2 {
     display: grid;
-    align-self: baseline;
+    align-items: center;
     justify-self: center;
+    color: rgb(56, 56, 56);
+    -webkit-text-stroke: .5px white;
+    letter-spacing: .4px;
+    font-size: 1.2em;
 }
 
 .container .rightSide-container #qualification-container a {
@@ -35,7 +43,7 @@
     border-radius: .5em;
     font-weight: bold;
     letter-spacing: .05em;
-    opacity: .7;
+    opacity: .6;
 }
 
 .container .rightSide-container #qualification-container a:hover {

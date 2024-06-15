@@ -21,7 +21,7 @@ body {
     /* background: green; */
     /* position: relative; */
     display: grid;
-    /* background: black; */
+    background: black;
 }
 
 @keyframes rotate {
