@@ -18,17 +18,16 @@
     color: rgb(56, 56, 56);
     -webkit-text-stroke: .5px white;
     letter-spacing: 1px;
-    font-size: 1.6em;
+    font-size: 1.8em;
 }
 
 .container .rightSide-container #qualification-container h2 {
     display: grid;
     align-items: center;
     justify-self: center;
-    color: rgb(56, 56, 56);
-    -webkit-text-stroke: .5px white;
-    letter-spacing: .4px;
-    font-size: 1.2em;
+    color: rgb(70, 70, 70);
+    letter-spacing: .9px;
+    font-size: 1.4em;
 }
 
 .container .rightSide-container #qualification-container a {
@@ -52,12 +51,23 @@
 
 .container .rightSide-container #qualification-container a:active {
     opacity: .4;
-    transform: translate(.6px, -1px);
+    transform: translate(.6px, -1px) scale(0.9);
 }
 
 .rightSide-container .vist-container {
     display: grid;
     justify-content: center;
-    color: red;
-    background-color: red;
+    align-items: end;
+    grid-template-columns: 2em 2em 2em;
+    background: black;
+    border-top: 2px solid white;
+    margin-bottom: 2em;
+    column-gap: 1em;
+}
+
+.rightSide-container .vist-container a {
+    display: grid;
+    font-size: 2em;
+    color: white;
+    background: black;
 }
