@@ -103,3 +103,13 @@
         transform: translate(2px);
     }
 }
+
+@media (max-width: 800px) {
+
+    .container .animation-wrapper {
+        grid-template-columns: 1fr;
+        background: black;
+        height: -100vh;
+        top: auto;
+    }
+}

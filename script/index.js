@@ -16,15 +16,15 @@ async function saveMyData() {
             li.setAttribute("style", "--clr: #00cc99;");
 
             if (index == 0) {
-                li.innerHTML = headerDetails.unorderedList.list[index];
+                li.innerHTML += headerDetails.unorderedList.list[index];
             } else if (index == 1) {
-                li.innerHTML = headerDetails.unorderedList.list[index];
+                li.innerHTML += headerDetails.unorderedList.list[index];
             } else if (index == 2) {
-                li.innerHTML = headerDetails.unorderedList.list[index];
+                li.innerHTML += headerDetails.unorderedList.list[index];
             } else if (index == 3) {
-                li.innerHTML = headerDetails.unorderedList.list[index];
+                li.innerHTML += headerDetails.unorderedList.list[index];
             } else if (index == 4) {
-                li.innerHTML = headerDetails.unorderedList.list[index];
+                li.innerHTML += headerDetails.unorderedList.list[index];
             }
         });
 
