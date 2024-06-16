@@ -24,7 +24,7 @@ async function saveMyData() {
 
         Array.from(aboutMe).forEach((li, index, array) => {
 
-            li.setAttribute("style", '--clr: #00cc99;')
+            li.setAttribute("style", "--clr: #00cc99;")
 
             if (index == 0) {
                 li.innerHTML = '&nbsp;&nbsp;home';
