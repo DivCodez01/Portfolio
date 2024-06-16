@@ -103,9 +103,3 @@
         transform: translate(2px);
     }
 }
-
-@keyframes rotate {
-    to {
-        transform: rotate(360deg);
-    }
-}
