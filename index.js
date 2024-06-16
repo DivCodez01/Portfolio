@@ -10,7 +10,9 @@ const myImage = document.querySelector('#image-container img');
 const fullName = document.querySelector('#qualification-container h1');
 const progQuality = document.querySelector('#qualification-container h2');
 const downloadCV = document.querySelector('#qualification-container a');
-const daveSenser = document.querySelector('#qualification-container a #hover-me')
+const daveSenser = document.querySelector('#qualification-container a #hover-me');
+
+const visitGitHub = document.querySelector('#visit-container #border-container');
 
 saveMyData()
 async function saveMyData() {
