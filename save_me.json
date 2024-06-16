@@ -16,9 +16,9 @@
     {
         "insideDetails": {
             "leftSideDetails": {
-                "backImage": "programming-skills.png",
+                "backImage": "images/programming-skills.png",
                 "shortDetails": "I'm a frontend developer and web designer, I offer the best projects resulting in quality work and also I'm developing carrer in backend development.",
-                "myImage": "myImg.jpg"
+                "myImage": "images/myImg.jpg"
             },
             "rightSideDetails": {
                 "qualificationDetails": [
