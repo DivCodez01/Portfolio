@@ -21,6 +21,23 @@ async function saveMyData() {
 
         const headerDetails = data[0].headerDetails;
         nickName.innerHTML = headerDetails.nickName;
+
+        Array.from(aboutMe).forEach((li, index, array) => {
+
+            li.setAttribute("style", '--clr: #00cc99;')
+
+            if (index == 0) {
+                li.innerHTML = '&nbsp;&nbsp;home';
+            } else if (index == 1) {
+                li.innerHTML = '&nbsp;&nbsp;about';
+            } else if (index == 2) {
+                li.innerHTML = '&nbsp;&nbsp;dashboard';
+            } else if (index == 3) {
+                li.innerHTML = '&nbsp;&nbsp;projects';
+            } else if (index == 4) {
+                li.innerHTML = '&nbsp;&nbsp;contact';
+            }
+        })
     } catch (error) {
 
     }
