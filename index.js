@@ -23,7 +23,7 @@ async function saveMyData() {
         const leftDetails = data[1].insideDetails.leftSideDetails;
         const rightDetails = data[1].insideDetails.rightSideDetails;
         const visitdetails = data[1].insideDetails.socialVisit;
-        console.log(leftDetails)
+        console.log(rightDetails)
 
         nickName.innerHTML = headerDetails.nickName;
 
@@ -46,6 +46,8 @@ async function saveMyData() {
 
         leftBackImage.src = leftDetails.backImage;
         shortMe.innerHTML = leftDetails.shortDetails;
+
+        myImage.src = leftDetails.myImage;
     } catch (error) {
 
     }
