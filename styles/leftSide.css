@@ -32,3 +32,21 @@
     font-style: italic;
     padding: 0 .8em;
 }
+
+@media (max-width: 1000px) {
+    .container .leftSide-container main #divCodez-details {
+        font-size: 1.15em;
+    }
+}
+
+@media (max-width: 900px) {
+    .container .leftSide-container main #divCodez-details {
+        font-size: 1.1em;
+    }
+}
+
+@media (max-width: 800px) {
+    .container .leftSide-container main #divCodez-details {
+        font-size: 2em;
+    }
+}
