@@ -8,7 +8,6 @@ async function saveMyData() {
         const leftDetails = data[1].insideDetails.leftSideDetails;
         const rightDetails = data[1].insideDetails.rightSideDetails;
         const visitDetails = data[1].insideDetails.socialVisit;
-        console.log(visitDetails)
 
         nickName.innerHTML = headerDetails.nickName;
 
@@ -55,4 +54,3 @@ async function saveMyData() {
 
     }
 }
-
