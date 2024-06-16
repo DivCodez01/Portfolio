@@ -61,24 +61,24 @@ async function saveMyData() {
             }
         });
 
-        leftBackImage.src = leftDetails.backImage;
-        shortMe.innerHTML = leftDetails.shortDetails;
-
         myImage.src = leftDetails.myImage;
 
-        downloadCvHover()
+        // rightMe();
+
+        // downloadCvHover();
 
     } catch (error) {
 
     }
 }
 
-function aboutMe() {
+function knowAboutMe() {
 
 }
 
 function leftMe() {
-
+    leftBackImage.src = leftDetails.backImage;
+    shortMe.innerHTML = leftDetails.shortDetails;
 }
 function centerImg() {
 
