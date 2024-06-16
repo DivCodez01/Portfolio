@@ -1,5 +1,4 @@
 const nickName = document.getElementById('my-name');
-const symbol = document.querySelector('em');
 const aboutMe = document.getElementsByTagName('li');
 
 const leftBackImage = document.querySelector('.leftSide-container img');
@@ -19,6 +18,9 @@ async function saveMyData() {
     try {
         const fetchSaveMe = await fetch('save_me.json');
         const data = await fetchSaveMe.json();
+
+        const headerDetails = data[0].headerDetails;
+        nickName.innerHTML = headerDetails.nickName;
     } catch (error) {
 
     }

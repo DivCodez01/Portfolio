@@ -1,11 +1,8 @@
 [
     {
-        "header-details": {
-            "nick-name": [
-                "&",
-                "Divcodez"
-            ],
-            "unordered-list": {
+        "headerDetails": {
+            "nickName": "<em>@</em>Divcodez",
+            "unorderedList": {
                 "list": [
                     "home",
                     "about",
@@ -17,25 +14,25 @@
         }
     },
     {
-        "my-details": {
-            "leftSide-details": {
-                "back-image": "programming-skils.png",
-                "short-details": "I'm a frontend developer and web designer, I offer the best projects resulting in quality work and also I'm developing carrer in backend development.",
-                "my-image": "myImage.jpg"
+        "insideDetails": {
+            "leftSideDetails": {
+                "backImage": "programming-skils.png",
+                "shortDetails": "I'm a frontend developer and web designer, I offer the best projects resulting in quality work and also I'm developing carrer in backend development.",
+                "myImage": "myImage.jpg"
             },
-            "rightSide-details": {
-                "qualification-details": [
+            "rightSideDetails": {
+                "qualificationDetails": [
                     "Divin NDIZIHIWE Gakiza",
                     "with their frameworks like"
                 ],
-                "download-me": {
+                "downloadMe": {
                     "mother": "download",
                     "child": "Download CV"
                 }
             },
-            "social-visit": {
-                "visit-url": {
-                    "visit-title": [
+            "socialVisit": {
+                "visitUrl": {
+                    "visitTitle": [
                         "GitHub",
                         "LinkedIn",
                         "Gmail"
