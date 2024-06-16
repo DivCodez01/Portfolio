@@ -1,12 +1,16 @@
-.container .rightSide-container #fullDetails-wrapper {
+.fullDetails-wrapper {
     /* height: 100vh; */
     display: grid;
-    justify-content: center;
-    align-items: baseline;
+    /* justify-content: center; */
+    /* align-items: baseline; */
     /* background: rgb(26, 26, 26); */
+    position: fixed;
+    background: red;
+    z-index: 1;
+    right: 0;
 }
 
-.container .rightSide-container #fullDetails-wrapper::before {
+/* .container .rightSide-container #fullDetails-wrapper::before {
     content: '';
     position: absolute;
     width: 100%;
@@ -23,32 +27,32 @@
 }
 
 .container .rightSide-container #fullDetails-wrapper ul li {
-    color: transparent;
-    /* margin: .1em; */
-    font-size: .8em;
-    font-weight: bold;
-    text-transform: uppercase;
-    z-index: 1;
-    padding: 0 .07em;
-    position: relative;
-    cursor: pointer;
-    letter-spacing: .07em;
-    font-size: .9em;
-    color: white;
+    color: transparent; */
+/* margin: .1em; */
+/* font-size: .8em;
+font-weight: bold;
+text-transform: uppercase;
+z-index: 1;
+padding: 0 .07em;
+position: relative;
+cursor: pointer;
+letter-spacing: .07em;
+font-size: .9em;
+color: white;
 }
 
-.container .rightSide-container #fullDetails-wrapper ul li::before {
-    /* border-right: .25em solid var(--clr); */
-    content: attr(data-move);
-    position: absolute;
-    padding-right: .1em;
-    width: 0;
-    transition: 1.1s;
-    color: var(--clr);
-    -webkit-text-stroke: .4px var(--clr);
-    overflow: hidden;
-    border-bottom: 1px solid #00cc99;
-    opacity: 0;
+.container .rightSide-container #fullDetails-wrapper ul li::before { */
+/* border-right: .25em solid var(--clr); */
+/* content: attr(data-move);
+position: absolute;
+padding-right: .1em;
+width: 0;
+transition: 1.1s;
+color: var(--clr);
+-webkit-text-stroke: .4px var(--clr);
+overflow: hidden;
+border-bottom: 1px solid #00cc99;
+opacity: 0;
 }
 
 .container .rightSide-container #fullDetails-wrapper ul li:hover::before {
@@ -60,4 +64,4 @@
 .container .rightSide-container #fullDetails-wrapper ul li:active::before {
     opacity: 0;
     transition: .2s;
-}
+} */

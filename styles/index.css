@@ -13,14 +13,14 @@ body {
 
 .container {
     display: grid;
-    grid-template-columns: 1fr 2fr;
-    height: 100vh;
+    grid-template-columns: 450px 1fr;
+    grid-template-rows: 100vh;
 }
 
 .rightSide-container {
     /* background: green; */
     /* position: relative; */
-    display: grid;
+    /* // display: grid; */
     /* background: black; */
 }
 

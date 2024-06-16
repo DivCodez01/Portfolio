@@ -51,8 +51,8 @@
     width: 1.7em;
     height: 1.7em;
     border-radius: 50%;
-    background-color: rgb(13, 170, 170);
-    box-shadow: 0 0 10px 3px rgb(13, 170, 170);
+    background-color: #00cc99;
+    box-shadow: 0 0 10px 3px #00cc99;
     right: 1.8em;
     top: 1.8em;
 }

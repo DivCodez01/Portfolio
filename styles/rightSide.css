@@ -1,42 +1,38 @@
 .container .rightSide-container {
     display: grid;
+    /* justify-content: center;
+    align-items: center; */
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    position: relative;
+    grid-template-rows: 1fr 80px;
 }
 
 .container .rightSide-container #qualification-container {
     display: grid;
     justify-content: center;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    align-content: center;
+    grid-row-gap: 1.4em;
 }
 
 .container .rightSide-container #qualification-container h1 {
     display: grid;
-    align-self: flex-end;
-    justify-self: center;
-    /* color: rgb(56, 56, 56); */
     -webkit-text-stroke: .5px #00cc99;
     letter-spacing: 1px;
-    font-size: 1.9em;
+    font-size: 2.15em;
     pointer-events: none;
 }
 
 .container .rightSide-container #qualification-container h2 {
     display: grid;
-    align-items: center;
-    justify-self: center;
+    justify-content: center;
     color: rgb(31, 31, 31);
     letter-spacing: .9px;
-    font-size: 1.6em;
+    font-size: 1.5em;
     pointer-events: none;
     text-shadow: 1px 1px .2px white;
 }
 
 .container .rightSide-container #qualification-container a {
     display: grid;
-    align-self: baseline;
     justify-self: center;
     text-decoration: none;
     background: #00cc99;
@@ -80,31 +76,29 @@
     transform: translate(.6px, -1px) scale(0.9);
 }
 
-.rightSide-container .vist-container {
+.container .rightSide-container #visit-container {
     display: grid;
     justify-content: center;
-    align-items: end;
-    grid-template-columns: 2em 2em 2em;
-    margin-bottom: 2em;
-    column-gap: 1em;
+    align-content: baseline;
 }
 
-.rightSide-container .vist-container::before {
-    content: '';
-    position: absolute;
-    width: 40%;
-    height: 100px;
-    background: transparent;
-    border-top-width: 3px;
-    border-top-style: dashed;
-    border-top-color: #00cc99;
-    bottom: 0;
-    right: 30%;
-}
-
-.rightSide-container .vist-container a {
-    display: grid;
+.container .rightSide-container #visit-container #border-container {
+    /* display: grid; */
     font-size: 2em;
     color: #00cc99;
-    background: black;
+    width: 250px;
+    /* height: 100%; */
+    display: grid;
+    /* justify-content: space-around; */
+    grid-template-columns: 1fr 1fr 1fr;
+    border-top-width: 2px 2px 0 0;
+    border-top-style: dashed;
+    border-top-color: #00cc99;
+    padding-top: .4em;
+}
+
+.container .rightSide-container #visit-container #border-container a {
+    display: grid;
+    justify-self: center;
+    color: #00cc99;
 }

@@ -9,89 +9,93 @@
     <link rel="stylesheet" href="styles/leftSide.css">
     <link rel="stylesheet" href="styles/rightSide.css">
     <link rel="stylesheet" href="styles/aboutMe.css">
-    <link rel="stylesheet" href="styles/inside.css">
-    <link rel="stylesheet" href="styles/rightBck_animation.css">
+    <!-- <link rel="stylesheet" href="styles/inside.css"> -->
+    <!-- <link rel="stylesheet" href="styles/rightBck_animation.css"> -->
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </head>
 
 <body>
+
+    <div class='fullDetails-wrapper'>
+        <h2 id="my-name">@DivCodez</h2>
+        <ul>
+            <li data-move="&nbsp;&nbsp;home" style="--clr: #00cc99;">&nbsp;&nbsp;home</li>
+            <li data-move="&nbsp;&nbsp;about" style="--clr: #00cc99;">&nbsp;&nbsp;about</li>
+            <li data-move="&nbsp;&nbsp;dashboard" style="--clr: #00cc99;">&nbsp;&nbsp;dashboard</li>
+            <li data-move="&nbsp;&nbsp;projects" style="--clr: #00cc99;">&nbsp;&nbsp;projects</li>
+            <li data-move="&nbsp;&nbsp;contact" style="--clr: #00cc99;">&nbsp;&nbsp;contact</li>
+        </ul>
+    </div>
+
     <div class="container">
 
-        <div id="leftSide-container">
+        <div class="leftSide-container">
             <img src="programming-skills.png" alt="">
             <main>
-                <h2 id="my-name">@DivCodez</h2>
-                <span id="divCodez-details">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium aperiam
-                    expedita nesciunt numquam.</span>
+                <span id="divCodez-details">Hello! I'm a frontend developer, I offer the best projects resulting in
+                    quality work and also I'm developing career in backend</span>
             </main>
-            <div id="image-container">
-                <img src="myImg.jpg" alt="">
+
+            <div class="image-container">
+                <!-- <img src="myImg.jpg" alt=""> -->
             </div>
         </div>
 
         <div class="rightSide-container">
-            <div id='fullDetails-wrapper'>
-                <ul>
-                    <li data-move="&nbsp;&nbsp;home" style="--clr: #00cc99;">&nbsp;&nbsp;home</li>
-                    <li data-move="&nbsp;&nbsp;about" style="--clr: #00cc99;">&nbsp;&nbsp;about</li>
-                    <li data-move="&nbsp;&nbsp;dashboard" style="--clr: #00cc99;">&nbsp;&nbsp;dashboard</li>
-                    <li data-move="&nbsp;&nbsp;projects" style="--clr: #00cc99;">&nbsp;&nbsp;projects</li>
-                    <li data-move="&nbsp;&nbsp;contact" style="--clr: #00cc99;">&nbsp;&nbsp;contact</li>
-                </ul>
-            </div>
 
             <div id="qualification-container">
-                <h1>Divin Gay NDIZIHIWE Gakiza</h1>
-                <h2>and their frameworks like</h2>
-                <a href="myImg.jpg" download>download
+                <h1>Divin NDIZIHIWE Gakiza</h1>
+                <h2>with their frameworks like</h2>
+                <a href="#">download
                     <span id="hover-me">download CV</span>
                 </a>
             </div>
 
-            <div class="vist-container">
-                <a href="#" title="GitHub">
-                    <ion-icon name="logo-github"></ion-icon>
-                </a>
-                <a href="#" title="LInkedIn">
-                    <ion-icon name="logo-linkedin"></ion-icon>
-                </a>
-                <a href="#" title="mail me">
-                    <ion-icon name="mail-open-outline"></ion-icon>
-                </a>
+            <div id="visit-container">
+                <div id="border-container">
+                    <a href="#" title="GitHub">
+                        <ion-icon name="logo-github"></ion-icon>
+                    </a>
+                    <a href="#" title="LInkedIn">
+                        <ion-icon name="logo-linkedin"></ion-icon>
+                    </a>
+                    <a href="#" title="mail me">
+                        <ion-icon name="mail-open-outline"></ion-icon>
+                    </a>
+                </div>
             </div>
+
+            <div class="animation-wrapper">
+                <span></span>
+                <div class="bck-image-wrapper">
+                    <div class="sun"></div>
+                    <div class="moon">
+                        <div class="earth"></div>
+                    </div>
+                </div>
+            </div>
+
         </div>
 
-    </div>
-    <div class="animation-wrapper">
-        <span></span>
-        <div class="bck-image-wrapper">
-            <div class="sun"></div>
-            <div class="moon">
-                <div class="earth"></div>
-            </div>
-        </div>
-    </div>
+        <script>
+            const downloadCV = document.querySelector('#qualification-container a')
+            const hoverSenser = document.querySelector('#qualification-container #hover-me')
+            console.log(downloadCV)
 
+            downloadCV.addEventListener('mouseover', function (ev) {
 
-    <script>
-        const downloadCV = document.querySelector('#qualification-container a')
-        const hoverSenser = document.querySelector('#qualification-container #hover-me')
-        console.log(downloadCV)
+                hoverSenser.classList.add('download');
+                hoverSenser.style.left = `${ev.offsetX - 20}px`
+                hoverSenser.style.top = `${ev.offsetY + 20}px`
+            })
 
-        downloadCV.addEventListener('mouseover', function (ev) {
-
-            hoverSenser.classList.add('download');
-            hoverSenser.style.left = `${ev.offsetX - 20}px`
-            hoverSenser.style.top = `${ev.offsetY + 20}px`
-        })
-
-        downloadCV.addEventListener('mouseleave', function (ev) {
-            hoverSenser.classList.remove('download');
-            hoverSenser.style.left = `${ev.offsetX - 100}px`
-            hoverSenser.style.top = `${ev.offsetY + 100}px`
-        })
-    </script>
+            downloadCV.addEventListener('mouseleave', function (ev) {
+                hoverSenser.classList.remove('download');
+                hoverSenser.style.left = `${ev.offsetX - 100}px`
+                hoverSenser.style.top = `${ev.offsetY + 100}px`
+            })
+        </script>
 </body>
 
 </html>
