@@ -2,6 +2,7 @@ const nickName = document.getElementById('my-name');
 const aboutMe = document.getElementsByTagName('li');
 
 const leftBackImage = document.querySelector('.leftSide-container img');
+console.log(leftBackImage)
 const shortMe = document.getElementById('divCodez-details');
 
 const myImage = document.querySelector('#image-container img');
@@ -20,24 +21,31 @@ async function saveMyData() {
         const data = await fetchSaveMe.json();
 
         const headerDetails = data[0].headerDetails;
+        const leftDetails = data[1].insideDetails.leftSideDetails;
+        const rightDetails = data[1].insideDetails.rightSideDetails;
+        const visitdetails = data[1].insideDetails.socialVisit;
+        console.log(headerDetails)
+
         nickName.innerHTML = headerDetails.nickName;
 
         Array.from(aboutMe).forEach((li, index, array) => {
 
-            li.setAttribute("style", "--clr: #00cc99;")
+            li.setAttribute("style", "--clr: #00cc99;");
 
             if (index == 0) {
-                li.innerHTML = '&nbsp;&nbsp;home';
+                li.innerHTML = headerDetails.unorderedList.list[index];
             } else if (index == 1) {
-                li.innerHTML = '&nbsp;&nbsp;about';
+                li.innerHTML = headerDetails.unorderedList.list[index];
             } else if (index == 2) {
-                li.innerHTML = '&nbsp;&nbsp;dashboard';
+                li.innerHTML = headerDetails.unorderedList.list[index];
             } else if (index == 3) {
-                li.innerHTML = '&nbsp;&nbsp;projects';
+                li.innerHTML = headerDetails.unorderedList.list[index];
             } else if (index == 4) {
-                li.innerHTML = '&nbsp;&nbsp;contact';
+                li.innerHTML = headerDetails.unorderedList.list[index];
             }
-        })
+        });
+
+        leftBackImage.src = leftDetails.backImage;
     } catch (error) {
 
     }
