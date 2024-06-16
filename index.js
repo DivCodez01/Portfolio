@@ -1,17 +1,3 @@
-const nickName = document.getElementById('my-name');
-const aboutMe = document.getElementsByTagName('li');
-
-const leftBackImage = document.querySelector('.leftSide-container img');
-const shortMe = document.getElementById('divCodez-details');
-
-const myImage = document.querySelector('#image-container img');
-
-const fullName = document.querySelector('#qualification-container h1');
-const progQuality = document.querySelector('#qualification-container h2');
-const downloadCV = document.querySelector('#qualification-container a');
-
-const visitMySaver = document.querySelectorAll('#visit-container #border-container a');
-
 function downloadCvHover() {
     const hoverSenser = document.querySelector('#qualification-container a #hover-me');
 
@@ -61,44 +47,30 @@ async function saveMyData() {
             }
         });
 
+        leftBackImage.src = leftDetails.backImage;
+        shortMe.innerHTML = leftDetails.shortDetails;
+
         myImage.src = leftDetails.myImage;
 
-        // rightMe();
+        fullName.innerHTML = rightDetails.qualificationDetails[0]
+        progQuality.innerHTML = rightDetails.qualificationDetails[1];
+        downloadCV.innerHTML = rightDetails.downloadMe.mother;
 
-        // downloadCvHover();
+        const span = document.createElement('span');
+        span.innerHTML = rightDetails.downloadMe.child;
+        span.setAttribute('id', "hover-me")
+        downloadCV.appendChild(span);
+
+        const urlDescTitles = visitDetails.visitUrl.visitTitle;
+
+        Array.from(visitMySaver).forEach((link, index) => {
+            link.setAttribute('title', urlDescTitles[index])
+        })
+
+        downloadCvHover()
 
     } catch (error) {
 
     }
-}
-
-function knowAboutMe() {
-
-}
-
-function leftMe() {
-    leftBackImage.src = leftDetails.backImage;
-    shortMe.innerHTML = leftDetails.shortDetails;
-}
-function centerImg() {
-
-}
-
-function rightMe() {
-
-    fullName.innerHTML = rightDetails.qualificationDetails[0]
-    progQuality.innerHTML = rightDetails.qualificationDetails[1];
-    downloadCV.innerHTML = rightDetails.downloadMe.mother;
-
-    const span = document.createElement('span');
-    span.innerHTML = rightDetails.downloadMe.child;
-    span.setAttribute('id', "hover-me")
-    downloadCV.appendChild(span);
-
-    const urlDescTitles = visitDetails.visitUrl.visitTitle;
-
-    Array.from(visitMySaver).forEach((link, index) => {
-        link.setAttribute('title', urlDescTitles[index])
-    })
 }
 
