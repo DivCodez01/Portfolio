@@ -17,7 +17,7 @@
     align-self: flex-end;
     justify-self: center;
     /* color: rgb(56, 56, 56); */
-    -webkit-text-stroke: .5px rgb(68, 139, 139);
+    -webkit-text-stroke: .5px #00cc99;
     letter-spacing: 1px;
     font-size: 1.9em;
     pointer-events: none;
@@ -27,11 +27,11 @@
     display: grid;
     align-items: center;
     justify-self: center;
-    color: rgb(56, 56, 56);
+    color: rgb(31, 31, 31);
     letter-spacing: .9px;
     font-size: 1.6em;
     pointer-events: none;
-    text-shadow: 1px 1px 1px white;
+    text-shadow: 1px 1px .2px white;
 }
 
 .container .rightSide-container #qualification-container a {
@@ -39,7 +39,7 @@
     align-self: baseline;
     justify-self: center;
     text-decoration: none;
-    background: rgb(13, 170, 170);
+    background: #00cc99;
     color: white;
     text-transform: uppercase;
     padding: .9em;
@@ -71,7 +71,7 @@
 }
 
 .container .rightSide-container #qualification-container a:hover {
-    background: rgb(13, 170, 170);
+    background: #00cc99;
     opacity: 1;
 }
 
@@ -97,7 +97,7 @@
     background: transparent;
     border-top-width: 3px;
     border-top-style: dashed;
-    border-top-color: rgb(17, 58, 26);
+    border-top-color: #00cc99;
     bottom: 0;
     right: 30%;
 }
@@ -105,6 +105,6 @@
 .rightSide-container .vist-container a {
     display: grid;
     font-size: 2em;
-    color: white;
+    color: #00cc99;
     background: black;
 }

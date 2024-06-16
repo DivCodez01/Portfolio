@@ -1,7 +1,7 @@
 .animation-wrapper {
     width: 100%;
     height: 100vh;
-    background: linear-gradient(90deg, white, black, black, black);
+    background: linear-gradient(90deg, white, rgb(20, 20, 20), rgb(20, 20, 20), rgb(20, 20, 20));
     display: grid;
     grid-template-columns: 1fr 2fr;
     place-content: center;
@@ -27,10 +27,11 @@
     height: 7em;
     border-radius: 50%;
     background-color: rgb(143, 143, 23);
-    box-shadow: 0 0 35px 5px rgb(176, 176, 176);
+    box-shadow: 0 0 35px 3px rgb(176, 176, 176);
     align-self: center;
     justify-self: center;
     z-index: 1;
+    animation: beeping 1s linear infinite;
 }
 
 .moon {
@@ -41,7 +42,7 @@
     border-style: solid;
     border-color: white transparent transparent transparent;
     border-radius: 50%;
-    animation: rotate 3.5s linear infinite;
+    animation: rotate 37.5s linear infinite;
 }
 
 .moon::before {
@@ -79,6 +80,28 @@
     right: .3em;
     top: .5em;
     border-radius: 50%;
+}
+
+@keyframes beeping {
+    0% {
+        transform: translate(0);
+    }
+
+    25% {
+        transform: translate(.5px);
+    }
+
+    50% {
+        transform: translate(1px);
+    }
+
+    75% {
+        transform: translate(1.5px);
+    }
+
+    100% {
+        transform: translate(2px);
+    }
 }
 
 @keyframes rotate {
