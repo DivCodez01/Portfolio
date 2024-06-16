@@ -1,7 +1,7 @@
 .container .leftSide-container #image-container {
     position: absolute;
-    width: 310px;
-    height: 340px;
+    width: 300px;
+    height: 330px;
     border-radius: 50%;
     display: flex;
     place-content: center;
@@ -37,16 +37,16 @@
 
 @media (max-width: 1000px) {
     .container .leftSide-container #image-container {
-        width: 290px;
-        height: 320px;
+        width: 280px;
+        height: 310px;
     }
 }
 
 @media (max-width: 900px) {
 
     .container .leftSide-container #image-container {
-        width: 280px;
-        height: 310px;
+        width: 260px;
+        height: 290px;
     }
 }
 
@@ -55,7 +55,9 @@
     .container .leftSide-container #image-container {
         width: 45%;
         height: 60%;
-        right: 150px;
+        right: auto;
+        display: flex;
+        justify-self: center;
         bottom: 0;
     }
 }
