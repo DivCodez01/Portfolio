@@ -1,0 +1,48 @@
+[
+    {
+        "header-details": {
+            "nick-name": [
+                "&",
+                "Divcodez"
+            ],
+            "unordered-list": {
+                "list": [
+                    "home",
+                    "about",
+                    "dahsboard",
+                    "projects",
+                    "contacts"
+                ]
+            }
+        }
+    },
+    {
+        "my-details": {
+            "leftSide-details": {
+                "back-image": "programming-skils.png",
+                "short-details": "I'm a frontend developer and web designer, I offer the best projects resulting in quality work and also I'm developing carrer in backend development.",
+                "my-image": "myImage.jpg"
+            },
+            "rightSide-details": {
+                "qualification-details": [
+                    "Divin NDIZIHIWE Gakiza",
+                    "with their frameworks like"
+                ],
+                "download-me": {
+                    "mother": "download",
+                    "child": "Download CV"
+                }
+            },
+            "social-visit": {
+                "visit-url": {
+                    "visit-title": [
+                        "GitHub",
+                        "LinkedIn",
+                        "Gmail"
+                    ]
+                }
+            },
+            "rightSide-animation": "no details"
+        }
+    }
+]
