@@ -2,7 +2,6 @@ const nickName = document.getElementById('my-name');
 const aboutMe = document.getElementsByTagName('li');
 
 const leftBackImage = document.querySelector('.leftSide-container img');
-console.log(leftBackImage)
 const shortMe = document.getElementById('divCodez-details');
 
 const myImage = document.querySelector('#image-container img');
@@ -24,7 +23,7 @@ async function saveMyData() {
         const leftDetails = data[1].insideDetails.leftSideDetails;
         const rightDetails = data[1].insideDetails.rightSideDetails;
         const visitdetails = data[1].insideDetails.socialVisit;
-        console.log(headerDetails)
+        console.log(leftDetails)
 
         nickName.innerHTML = headerDetails.nickName;
 
@@ -46,6 +45,7 @@ async function saveMyData() {
         });
 
         leftBackImage.src = leftDetails.backImage;
+        shortMe.innerHTML = leftDetails.shortDetails;
     } catch (error) {
 
     }
