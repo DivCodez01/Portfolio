@@ -1,4 +1,4 @@
-.container #leftSide-container #image-container {
+.container .leftSide-container #image-container {
     position: absolute;
     width: 310px;
     height: 340px;
@@ -6,11 +6,11 @@
     display: flex;
     place-content: center;
     place-items: center;
-    right: -140px;
+    right: -155px;
     z-index: 1;
 }
 
-.container #leftSide-container #image-container::before {
+.container .leftSide-container #image-container::before {
     display: flex;
     content: '';
     position: absolute;
@@ -24,7 +24,7 @@
     box-shadow: 0 0 7px 1px #00cc99 inset;
 }
 
-.container #leftSide-container #image-container img {
+.container .leftSide-container #image-container img {
     width: 93%;
     height: 93%;
     border-radius: 50%;

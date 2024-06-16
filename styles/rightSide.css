@@ -17,7 +17,7 @@
     display: grid;
     -webkit-text-stroke: .5px #00cc99;
     letter-spacing: 1px;
-    font-size: 2.15em;
+    font-size: 2em;
     pointer-events: none;
 }
 
@@ -26,7 +26,7 @@
     justify-content: center;
     color: rgb(31, 31, 31);
     letter-spacing: .9px;
-    font-size: 1.5em;
+    font-size: 1.4em;
     pointer-events: none;
     text-shadow: 1px 1px .2px white;
 }
@@ -38,13 +38,14 @@
     background: #00cc99;
     color: white;
     text-transform: uppercase;
-    padding: .9em;
+    padding: .6em .9em;
     border-radius: .5em;
     font-weight: bold;
     letter-spacing: .05em;
     opacity: .7;
     position: relative;
     font-style: italic;
+    border: 2px solid black;
 }
 
 .container .rightSide-container #qualification-container span {

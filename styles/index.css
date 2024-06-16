@@ -17,13 +17,6 @@ body {
     grid-template-rows: 100vh;
 }
 
-.rightSide-container {
-    /* background: green; */
-    /* position: relative; */
-    /* // display: grid; */
-    /* background: black; */
-}
-
 @keyframes rotate {
     to {
         transform: rotate(360deg);
