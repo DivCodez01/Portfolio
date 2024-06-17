@@ -26,10 +26,14 @@ function showAboutMe(e) {
         hideAbout.classList.add('leaveMe')
 
         fix.forEach(label => {
-            label.classList.add('fix')
+            label.classList.add('fix');
         })
     } else {
-        hideAbout.classList.remove('leaveMe')
+        hideAbout.classList.remove('leaveMe');
+
+        fix.forEach(label => {
+            label.classList.remove('fix');
+        })
     }
 }
 
