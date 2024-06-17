@@ -23,3 +23,15 @@ const autoDeleting = (txt, incrm, func) => {
         setTimeout(func, 1000);
     }
 }
+
+const startTyping = (incrm) => {
+    if (typeof myText[incrm] == "undefined") {
+        setTimeout(() => {
+            startTyping(0)
+        }, 10000);
+    } else if (incrm <= myText[incrm].length + 1) {
+        autotyping(myText[incrm], 0, function () {
+            startTyping(incrm + 1);
+        })
+    }
+}
