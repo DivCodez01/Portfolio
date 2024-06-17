@@ -24,12 +24,13 @@ function showAboutMe(e) {
 
     if (unorderedList[0].className.includes('showMe')) {
         hideAbout.classList.add('leaveMe')
+
+        fix.forEach(label => {
+            label.classList.add('fix')
+        })
     } else {
         hideAbout.classList.remove('leaveMe')
     }
-    fix.forEach(label => {
-        label.classList.add('fix')
-    })
 }
 
 function hideAboutMe(e) {
