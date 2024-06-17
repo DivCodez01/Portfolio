@@ -1,6 +1,7 @@
 const nickName = document.getElementById('my-name');
 const unorderedList = document.getElementsByTagName('ul')
 const aboutMe = document.getElementsByTagName('li');
+const hideAbout = document.getElementById('hide-about')
 
 const leftBackImage = document.querySelector('.leftSide-container img');
 const shortMe = document.getElementById('divCodez-details');
@@ -18,9 +19,20 @@ nickName.addEventListener("click", showAboutMe);
 function showAboutMe(e) {
     console.log(e.type);
     console.log(unorderedList[0])
-    unorderedList[0].classList.add('showMe')
+    unorderedList[0].classList.toggle('showMe');
+
+    if (unorderedList[0].className.includes('showMe')) {
+        hideAbout.classList.add('leaveMe')
+    } else {
+        hideAbout.classList.remove('leaveMe')
+    }
 }
 
 function hideAboutMe(e) {
     console.log(e.type);
 }
+
+// hideAbout.addEventListener('click', ev => {
+//     console.log(ev.type)
+//     unorderedList[0].classList.remove('showMe')
+// })
