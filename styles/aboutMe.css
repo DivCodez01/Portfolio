@@ -23,7 +23,7 @@
     justify-self: center;
     color: #00cc99;
     font-size: 1.5em;
-    cursor: pointer;
+    pointer-events: none;
 }
 
 .fullDetails-wrapper ul {
@@ -71,56 +71,6 @@
     transition: .2s;
 }
 
-#hide-about {
-    background: rgb(20, 20, 20);
-    width: 3.5em;
-    height: 2.5em;
-    position: fixed;
-    top: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    border-radius: .5em;
-    margin: .5em 0;
-    opacity: 0;
-    transition: .4s;
-}
-
-#hide-about.leaveMe {
-    opacity: 1;
-}
-
-#center-me {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.3em;
-    padding: .5em;
-    border-color: green;
-}
-
-label {
-    border: none;
-    background: rgb(255, 255, 255);
-    border-radius: .3em;
-    transition: .4s;
-
-}
-
-label.fix {
-
-    &:nth-child(1) {
-        transform: rotate(35deg);
-        grid-column: 1;
-        grid-row: 1;
-    }
-
-    &:nth-child(2) {
-        transform: rotate(155deg);
-        grid-column: 1;
-        grid-row: 1;
-    }
-}
-
 @media (max-width: 1000px) {
     .fullDetails-wrapper {
         grid-template-columns: 400px 1fr;
@@ -158,6 +108,8 @@ label.fix {
     .fullDetails-wrapper #my-name {
         padding: 12px;
         grid-column: 1/5;
+        cursor: pointer;
+        pointer-events: initial;
     }
 
     .fullDetails-wrapper ul {
@@ -189,6 +141,56 @@ label.fix {
 
     .fullDetails-wrapper ul li::before {
         border: none;
+    }
+
+    #hide-about {
+        background: rgb(20, 20, 20);
+        width: 3.5em;
+        height: 2.5em;
+        position: fixed;
+        top: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-radius: .5em;
+        margin: .5em 0;
+        opacity: 0;
+        transition: .4s;
+    }
+
+    #hide-about.leaveMe {
+        opacity: 1;
+    }
+
+    #center-me {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.3em;
+        padding: .5em;
+        border-color: green;
+    }
+
+    label {
+        border: none;
+        background: rgb(255, 255, 255);
+        border-radius: .3em;
+        transition: .4s;
+
+    }
+
+    label.fix {
+
+        &:nth-child(1) {
+            transform: rotate(35deg);
+            grid-column: 1;
+            grid-row: 1;
+        }
+
+        &:nth-child(2) {
+            transform: rotate(155deg);
+            grid-column: 1;
+            grid-row: 1;
+        }
     }
 
     .container {
