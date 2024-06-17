@@ -1,4 +1,10 @@
-const myText = ["My name is !!!", "NDIZIHIWE Gakiza Divin", "I'm the one who help you to know", "Coding...", "in short", "way and", "how can", "make better", " website 😲😲😲"];
+const myText = [
+    "Hello 👋!",
+    "I've knowledge in",
+    "HTML, CSS and JS",
+    "with frameworks like",
+    "TAILWINDCSS and ReactJS",
+    "💪 💪 💪"];
 
 const autotyping = (txt, incrm, func) => {
     if (incrm < txt.length + 1) {
@@ -30,7 +36,7 @@ const startTyping = (incrm) => {
     if (typeof myText[incrm] == "undefined") {
         setTimeout(() => {
             startTyping(0)
-        }, 10000);
+        }, 2000);
     } else if (incrm <= myText[incrm].length + 1) {
         autotyping(myText[incrm], 0, function () {
             startTyping(incrm + 1);
@@ -39,5 +45,5 @@ const startTyping = (incrm) => {
 }
 
 setTimeout(() => {
-    startTyping(0)
+    // startTyping(0)
 }, 100);
