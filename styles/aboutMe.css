@@ -228,3 +228,23 @@
         font-size: .67em;
     }
 }
+
+media (max-width: 300px) {
+    .fullDetails-wrapper ul {
+        grid-template-rows: 40px 40px 40px 40px 40px;
+    }
+
+    .fullDetails-wrapper ul li {
+        font-size: .6em;
+    }
+}
+
+@media (max-width: 250px) {
+    .fullDetails-wrapper ul {
+        grid-template-rows: 37px 37px 37px 37px 37px;
+    }
+
+    .fullDetails-wrapper ul li {
+        font-size: .53em;
+    }
+}
