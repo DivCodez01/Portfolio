@@ -226,3 +226,28 @@
         font-size: .5em;
     }
 }
+
+@media (max-width: 350px) {
+    .container .rightSide-container #qualification-container h1 {
+        font-size: 1.2em;
+        color: #00cc99;
+    }
+
+    .container .rightSide-container #qualification-container h2 {
+        font-size: .85em;
+    }
+
+    .container .rightSide-container #qualification-container a {
+        padding: .35em .6em;
+        font-size: .8em;
+    }
+
+    .container .rightSide-container #visit-container #border-container {
+        width: 135px;
+        padding-top: .5em;
+    }
+
+    .container .rightSide-container #visit-container #border-container a {
+        font-size: .46em;
+    }
+}
