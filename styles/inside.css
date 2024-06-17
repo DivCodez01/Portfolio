@@ -53,11 +53,43 @@
 @media (max-width: 800px) {
 
     .container .leftSide-container #image-container {
-        width: 45%;
-        height: 60%;
+        width: 260px;
+        height: 290px;
         right: auto;
         display: flex;
         justify-self: center;
-        bottom: 0;
+        bottom: 1em;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .container .leftSide-container #image-container {
+        width: 240px;
+        height: 270px;
+    }
+}
+
+@media (max-width: 400px) {
+
+    .container .leftSide-container #image-container {
+        width: 210px;
+        height: 240px;
+    }
+}
+
+@media (max-width: 290px) {
+
+    .container .leftSide-container #image-container {
+        width: 180px;
+        height: 200px;
+    }
+}
+
+@media (max-width: 250px) {
+
+    .container .leftSide-container #image-container {
+        width: 150px;
+        height: 170px;
     }
 }

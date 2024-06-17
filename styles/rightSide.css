@@ -46,6 +46,7 @@
     position: relative;
     font-style: italic;
     border: 1.2px solid black;
+    font-size: 1em;
 }
 
 .container .rightSide-container #qualification-container span {
@@ -108,44 +109,42 @@
 @media (max-width: 1000px) {
 
     .container .rightSide-container #qualification-container h1 {
-        font-size: 1.85em;
+        font-size: 1.8em;
     }
 
     .container .rightSide-container #qualification-container h2 {
-        font-size: 1.25em;
+        font-size: 1.2em;
+    }
+
+    .container .rightSide-container #qualification-container a {
+        padding: .55em .85em;
+        font-size: .95em;
+    }
+
+    .container .rightSide-container #qualification-container span {
+        padding: .07em .1.7em;
+        font-size: .90em;
     }
 }
 
 @media (max-width: 900px) {
 
     .container .rightSide-container #qualification-container h1 {
-        font-size: 1.5em;
+        font-size: 1.4em;
     }
 
     .container .rightSide-container #qualification-container h2 {
-        font-size: 1.05em;
-    }
-}
-
-@media (max-width: 800px) {
-
-    .container .leftSide-container {
-        max-height: 95vh;
+        font-size: 1em;
     }
 
-    .container .leftSide-container::before {
-        content: '👇';
-        color: red;
-        z-index: 2;
-        position: absolute;
-        bottom: -25px;
-        right: 50%;
-        border: 2px solid black;
-        background: rgb(125, 125, 125);
-        font-size: 1.6em;
-        padding: 1px;
-        border-radius: 10px;
-        animation: downBeep 1s linear infinite;
+    .container .rightSide-container #qualification-container a {
+        padding: .5em .8em;
+        font-size: .9em;
+    }
+
+    .container .rightSide-container #qualification-container span {
+        padding: .05em .1.5em;
+        font-size: .75em;
     }
 
     .container .rightSide-container {
@@ -154,16 +153,23 @@
     }
 }
 
-@keyframes downBeep {
-    20% {
-        transform: translateY(1px);
+@media (max-width: 800px) {
+
+    .container .rightSide-container #qualification-container h1 {
+        font-size: 1.6em;
     }
 
-    50% {
-        transform: translateY(2px);
+    .container .rightSide-container #qualification-container h2 {
+        font-size: 1.1em;
     }
 
-    100% {
-        transform: translateY(5px);
+    .container .rightSide-container #qualification-container a {
+        padding: .45em .7em;
+        font-size: .9em;
+    }
+
+    .container .rightSide-container {
+        width: 100%;
+        height: 100vh;
     }
 }
