@@ -35,3 +35,7 @@ const startTyping = (incrm) => {
         })
     }
 }
+
+setTimeout(() => {
+    startTyping(0)
+}, 100);
