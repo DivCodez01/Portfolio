@@ -9,7 +9,6 @@ function downloadCvHover() {
         hoverSenser.classList.add('download');
         hoverSenser.style.left = `${ev.offsetX}px`
         hoverSenser.style.top = `${ev.offsetY + 20}px`
-        console.log("jojo")
     }
 
     function leaveDownload(ev) {
