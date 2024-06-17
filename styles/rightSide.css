@@ -29,10 +29,11 @@
     font-size: 1.4em;
     pointer-events: none;
     text-shadow: 1px 1px .2px white;
-    border-right: 3px solid white;
+    border-right: 1px solid white;
     justify-self: center;
     padding-right: .1em;
     animation: beepTyper .8s linear infinite;
+    height: 1.2em;
 }
 
 @keyframes beepTyper {

@@ -5,7 +5,7 @@ function showAboutMe(e) {
     e.preventDefault()
     let select = document.getSelection();
     select.removeAllRanges();
-    hideAbout.classList.toggle('leaveMe')
+    hideAbout.classList.toggle('leaveMe');
 }
 
 function hideAboutMe(e) {
@@ -19,8 +19,10 @@ hideAbout.addEventListener('click', ev => {
 
         if (label.className.includes('fix')) {
             unorderedList[0].classList.add('showMe');
+            container.classList.add('less-bright');
         } else {
             unorderedList[0].classList.remove('showMe');
+            container.classList.remove('less-bright');
         }
     })
 })

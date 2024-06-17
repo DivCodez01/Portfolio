@@ -4,10 +4,13 @@ async function saveMyData() {
         const fetchSaveMe = await fetch('save_me.json');
         const data = await fetchSaveMe.json();
 
-        const headerDetails = data[0].headerDetails;
-        const leftDetails = data[1].insideDetails.leftSideDetails;
-        const rightDetails = data[1].insideDetails.rightSideDetails;
-        const visitDetails = data[1].insideDetails.socialVisit;
+        const titleName = data[0].title;
+        document.title = titleName;
+
+        const headerDetails = data[1].headerDetails;
+        const leftDetails = data[2].insideDetails.leftSideDetails;
+        const rightDetails = data[2].insideDetails.rightSideDetails;
+        const visitDetails = data[2].insideDetails.socialVisit;
 
         nickName.innerHTML = headerDetails.nickName;
 

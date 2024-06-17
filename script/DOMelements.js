@@ -1,3 +1,5 @@
+const container = document.querySelector(".container");
+
 const nickName = document.getElementById('my-name');
 const unorderedList = document.getElementsByTagName('ul')
 const aboutMe = document.getElementsByTagName('li');

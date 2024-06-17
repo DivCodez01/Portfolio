@@ -1,5 +1,5 @@
 const myText = [
-    "Hello 👋!",
+    "Hello 👋",
     "I've knowledge in",
     "HTML, CSS and JS",
     "with frameworks like",
@@ -45,5 +45,5 @@ const startTyping = (incrm) => {
 }
 
 setTimeout(() => {
-    // startTyping(0)
+    startTyping(0)
 }, 100);

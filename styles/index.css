@@ -42,5 +42,11 @@ body {
 
     .container {
         grid-template-columns: 11fr;
+        transition: .6s;
+    }
+
+    .container.less-bright {
+        filter: brightness(10%);
+        pointer-events: none;
     }
 }
