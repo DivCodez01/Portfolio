@@ -202,3 +202,27 @@
         font-size: .6em;
     }
 }
+
+@media (max-width: 400px) {
+    .container .rightSide-container #qualification-container h1 {
+        font-size: 1.4em;
+    }
+
+    .container .rightSide-container #qualification-container h2 {
+        font-size: .95em;
+    }
+
+    .container .rightSide-container #qualification-container a {
+        padding: .35em .6em;
+        font-size: .8em;
+    }
+
+    .container .rightSide-container #visit-container #border-container {
+        width: 150px;
+        padding-top: .5em;
+    }
+
+    .container .rightSide-container #visit-container #border-container a {
+        font-size: .5em;
+    }
+}
