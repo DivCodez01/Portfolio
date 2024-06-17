@@ -1,21 +1,11 @@
 nickName.addEventListener("click", showAboutMe);
 
 function showAboutMe(e) {
+
     e.preventDefault()
     let select = document.getSelection();
     select.removeAllRanges();
-
-    console.log(e.type);
-    console.log(unorderedList[0])
-    // unorderedList[0].classList.add('showMe');
-
-    // if (unorderedList[0].className.includes('showMe')) {
     hideAbout.classList.toggle('leaveMe')
-
-    // fix.forEach(label => {
-    //     label.classList.add('fix');
-    // })
-    // }
 }
 
 function hideAboutMe(e) {
@@ -23,7 +13,6 @@ function hideAboutMe(e) {
 }
 
 hideAbout.addEventListener('click', ev => {
-    console.log(ev.type)
 
     fix.forEach(label => {
         label.classList.toggle('fix');

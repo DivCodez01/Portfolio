@@ -1,6 +1,8 @@
+const myText = ["My name is !!!", "NDIZIHIWE Gakiza Divin", "I'm the one who help you to know", "Coding...", "in short", "way and", "how can", "make better", " website 😲😲😲"];
+
 const autotyping = (txt, incrm, func) => {
     if (incrm < txt.length + 1) {
-        typeWriterElms.innerHTML = txt.substring(0, incrm++);
+        progQuality.innerHTML = txt.substring(0, incrm++);
         let typeElmTm = 10 + Math.random() * 100;
         setTimeout(() => {
             autotyping(txt, incrm, func);
@@ -14,7 +16,7 @@ const autotyping = (txt, incrm, func) => {
 
 const autoDeleting = (txt, incrm, func) => {
     if (incrm >= 0) {
-        typeWriterElms.innerHTML = txt.substring(0, incrm--);
+        progQuality.innerHTML = txt.substring(0, incrm--);
         let typeElmTm = 10 + Math.random() * 10;
         setTimeout(() => {
             autoDeleting(txt, incrm, func);
