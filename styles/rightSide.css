@@ -86,12 +86,11 @@
 }
 
 .container .rightSide-container #visit-container #border-container {
-    /* display: grid; */
+    display: grid;
     font-size: 2em;
     color: #00cc99;
     width: 250px;
     /* height: 100%; */
-    display: grid;
     /* justify-content: space-around; */
     grid-template-columns: 1fr 1fr 1fr;
     border-top-width: 2px 2px 0 0;
