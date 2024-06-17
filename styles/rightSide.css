@@ -178,3 +178,27 @@
         font-size: .7em;
     }
 }
+
+@media (max-width: 700px) {
+    .container .rightSide-container #qualification-container h1 {
+        font-size: 1.5em;
+    }
+
+    .container .rightSide-container #qualification-container h2 {
+        font-size: 1em;
+    }
+
+    .container .rightSide-container #qualification-container a {
+        padding: .4em .65em;
+        font-size: .85em;
+    }
+
+    .container .rightSide-container #visit-container #border-container {
+        width: 180px;
+        padding-top: .5em;
+    }
+
+    .container .rightSide-container #visit-container #border-container a {
+        font-size: .6em;
+    }
+}
