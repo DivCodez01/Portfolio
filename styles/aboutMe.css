@@ -83,6 +83,7 @@
     border-radius: .5em;
     margin: .5em 0;
     opacity: 0;
+    transition: .4s;
 }
 
 #hide-about.leaveMe {
@@ -101,19 +102,20 @@ label {
     border: none;
     background: rgb(255, 255, 255);
     border-radius: .3em;
+    transition: .4s;
 
 }
 
 label.fix {
 
     &:nth-child(1) {
-        transform: rotate(45deg);
+        transform: rotate(35deg);
         grid-column: 1;
         grid-row: 1;
     }
 
     &:nth-child(2) {
-        transform: rotate(135deg);
+        transform: rotate(155deg);
         grid-column: 1;
         grid-row: 1;
     }
