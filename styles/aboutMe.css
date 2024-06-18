@@ -156,10 +156,12 @@
         margin: .5em 0;
         opacity: 0;
         transition: .4s;
+        pointer-events: none;
     }
 
     #hide-about.leaveMe {
         opacity: 1;
+        pointer-events: initial;
     }
 
     #center-me {

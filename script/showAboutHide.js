@@ -1,4 +1,4 @@
-nickName.addEventListener("click", showAboutMe);
+nickName.onclick = (showAboutMe);
 
 function showAboutMe(e) {
 
@@ -8,11 +8,7 @@ function showAboutMe(e) {
     hideAbout.classList.toggle('leaveMe');
 }
 
-function hideAboutMe(e) {
-    console.log(e.type);
-}
-
-hideAbout.addEventListener('click', ev => {
+hideAbout.onclick = (ev) => {
 
     fix.forEach(label => {
         label.classList.toggle('fix');
@@ -25,4 +21,14 @@ hideAbout.addEventListener('click', ev => {
             container.classList.remove('less-bright');
         }
     })
-})
+}
+
+document.onscroll = function (ev) {
+    hideAbout.classList.remove('leaveMe');
+    unorderedList[0].classList.remove('showMe');
+    container.classList.remove('less-bright');
+
+    fix.forEach(label => {
+        label.classList.remove('fix');
+    })
+}

@@ -1,9 +1,9 @@
 function downloadCvHover() {
     const hoverSenser = document.querySelector('#qualification-container a #hover-me');
 
-    downloadCV.addEventListener('mouseover', hoverDownload);
-    downloadCV.addEventListener('mouseleave', leaveDownload);
-    downloadCV.addEventListener('click', leaveRightSideReject);
+    downloadCV.onmouseover = (hoverDownload);
+    downloadCV.onmouseleave = (leaveDownload);
+    downloadCV.onclick = (leaveRightSideReject);
 
     function hoverDownload(ev) {
         hoverSenser.classList.add('download');

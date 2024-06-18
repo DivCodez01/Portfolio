@@ -10,6 +10,16 @@ body {
     font-family: "DivCodez", Arial, Helvetica, sans-serif;
     background: #00cc99;
     overflow-x: hidden;
+    -webkit-appearance: none;
+}
+
+body::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 0px;
+}
+
+body::-webkit-scrollbar-thumb {
+    -webkit-appearance: none;
 }
 
 .container {
