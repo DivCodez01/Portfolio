@@ -32,3 +32,14 @@ document.onscroll = function (ev) {
         label.classList.remove('rotate');
     })
 }
+
+screenRotate()
+function screenRotate() {
+
+    setInterval(() => {
+        const scrRotate = screen.orientation.angle;
+        if (scrRotate) {
+
+        }
+    }, 400);
+}

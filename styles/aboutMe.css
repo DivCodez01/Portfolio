@@ -157,6 +157,7 @@
         padding: .2em;
         opacity: 0;
         pointer-events: none;
+        cursor: pointer;
     }
 
     #center-me {
@@ -176,6 +177,7 @@
         height: 4px;
         align-self: center;
         transition: .4s;
+        cursor: pointer;
     }
 
     #hide-about.leaveMe {
