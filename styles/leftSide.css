@@ -6,6 +6,10 @@
     pointer-events: none;
 }
 
+div.sRotate {
+    height: 600px;
+}
+
 .container .leftSide-container img {
     width: 100%;
     height: 100%;

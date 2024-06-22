@@ -39,7 +39,11 @@ function screenRotate() {
     setInterval(() => {
         const scrRotate = screen.orientation.angle;
         if (scrRotate) {
-
+            leftSide.classList.add('sRotate');
+            rightSide.classList.add('sRotate');
+        } else {
+            leftSide.classList.remove('sRotate');
+            rightSide.classList.remove('sRotate');
         }
     }, 400);
 }
