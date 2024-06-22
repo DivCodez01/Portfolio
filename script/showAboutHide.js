@@ -10,10 +10,10 @@ function showAboutMe(e) {
 
 hideAbout.onclick = (ev) => {
 
-    fix.forEach(label => {
-        label.classList.toggle('fix');
+    rotate.forEach(label => {
+        label.classList.toggle('rotate');
 
-        if (label.className.includes('fix')) {
+        if (label.className.includes('rotate')) {
             unorderedList[0].classList.add('showMe');
             container.classList.add('less-bright');
         } else {
@@ -28,7 +28,7 @@ document.onscroll = function (ev) {
     unorderedList[0].classList.remove('showMe');
     container.classList.remove('less-bright');
 
-    fix.forEach(label => {
-        label.classList.remove('fix');
+    rotate.forEach(label => {
+        label.classList.remove('rotate');
     })
 }

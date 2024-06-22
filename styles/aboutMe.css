@@ -144,19 +144,38 @@
     }
 
     #hide-about {
-        background: rgb(20, 20, 20);
+        background: rgb(37, 37, 37);
         width: 3.5em;
         height: 2.5em;
         position: fixed;
         top: 0;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        border-radius: 50%;
+        display: grid;
+        border-radius: .5em;
         margin: .5em 0;
-        opacity: 0;
         transition: .4s;
+        grid-gap: .5em;
+        padding: .2em;
+        opacity: 0;
         pointer-events: none;
+    }
+
+    #center-me {
+        background: rgb(0, 0, 0);
+        display: grid;
+        width: 100%;
+        height: 100%;
+        border-radius: .5em;
+        grid-template-columns: 1fr;
+        position: relative;
+        transition: .4s;
+    }
+
+    label {
+        background: white;
+        border-radius: .2em;
+        height: 4px;
+        align-self: center;
+        transition: .4s;
     }
 
     #hide-about.leaveMe {
@@ -164,34 +183,24 @@
         pointer-events: initial;
     }
 
-    #center-me {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 0.3em;
-        padding: .5em;
-        border-color: green;
-    }
-
     label {
-        border: none;
-        background: rgb(255, 255, 255);
-        border-radius: .3em;
-        transition: .4s;
-
-    }
-
-    label.fix {
-
-        &:nth-child(1) {
-            transform: rotate(35deg);
-            grid-column: 1;
-            grid-row: 1;
+        &:first-child.rotate {
+            transform: rotate(25deg);
+            position: absolute;
+            width: 100%;
+            align-self: center;
         }
 
-        &:nth-child(2) {
-            transform: rotate(145deg);
-            grid-column: 1;
-            grid-row: 1;
+        &:nth-of-type(2).rotate {
+            background: transparent;
+            align-self: center;
+        }
+
+        &:last-child.rotate {
+            transform: rotate(155deg);
+            position: absolute;
+            width: 100%;
+            align-self: center;
         }
     }
 
