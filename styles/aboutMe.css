@@ -154,14 +154,14 @@
         margin: .5em 0;
         transition: .4s;
         grid-gap: .5em;
-        padding: .2em;
+        padding: .4em;
         opacity: 0;
         pointer-events: none;
         cursor: pointer;
     }
 
     #center-me {
-        background: rgb(0, 0, 0);
+        background: #000;
         display: grid;
         width: 100%;
         height: 100%;
@@ -187,7 +187,7 @@
 
     label {
         &:first-child.rotate {
-            transform: rotate(25deg);
+            transform: rotate(385deg);
             position: absolute;
             width: 100%;
             align-self: center;
@@ -199,7 +199,7 @@
         }
 
         &:last-child.rotate {
-            transform: rotate(155deg);
+            transform: rotate(515deg);
             position: absolute;
             width: 100%;
             align-self: center;
